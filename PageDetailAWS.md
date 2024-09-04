@@ -1,96 +1,121 @@
-### **1. Introduction to Spring Boot**
-- **Overview of Spring Framework**
-    - What is Spring Framework ? and why use it?
-    - Core concepts: Inversion of Control (IoC) and Dependency Injection (DI)
-- **What is Spring Boot?**
-    - Features and benefits
-    - Comparison with traditional Spring applications
+### **AWS with DevOps Syllabus**
 
-### **2. Setting Up the Development Environment**
-- **Installing Java Development Kit (JDK)**
-- **Setting up IDEs** (IntelliJ IDEA, Eclipse, or VS Code)
-- **Maven and Gradle**
-    - Introduction to Maven and Gradle
-    - Creating Spring Boot projects using Spring Initializr
-- **Creating Your First Spring Boot Application**
-    - Project structure overview
-    - Running the application
+#### **1. Introduction to DevOps**
+   - Understanding DevOps Principles and Practices
+   - DevOps Lifecycle and Tools
+   - Benefits of DevOps in Software Development
+   - Introduction to Continuous Integration/Continuous Deployment (CI/CD)
+   - Key DevOps Concepts:
+     - Version Control
+     - Infrastructure as Code (IaC)
+     - Configuration Management
+     - Monitoring and Logging
 
-### **3. Spring Boot Core Concepts**
-- **Java concepts (Must Know for Spring Boot)**
-  - Arrays, Strings, methods, loops
-  - OOPs concepts, construction, setters, getters
-  - Collections framework (list, map, set), iterator
-  - Java 8 concepts like lambda, optional, stream etc.
-  - Exceptions and exception handling
-  
-- **Spring Boot Starters**
-    - Understanding starters and dependencies
-    - Commonly used starters (web, data, security, etc.)
-- **Spring Boot Architecture**
-    - Understanding the Spring Boot layer like controller, service, repository etc.
-    - How request or data is processed within the Spring Boot application ?
-- **Core Annotations**
-    - Core annotations for Spring Boot applications like `@SpringBootApplication` , `@Configuration`, `@ComponentScan` , `@Component`, `@Service`, `@Autowired` etc.
+#### **2. Introduction to AWS**
+   - Overview of AWS Cloud Computing
+   - Setting Up an AWS Account
+   - AWS Global Infrastructure (Regions, Availability Zones)
+   - Introduction to Key AWS Services:
+     - EC2 (Elastic Compute Cloud)
+     - S3 (Simple Storage Service)
+     - RDS (Relational Database Service)
+     - IAM (Identity and Access Management)
+     - VPC (Virtual Private Cloud)
+     - CloudFormation (Infrastructure as Code)
 
+#### **3. Version Control with Git and GitHub**
+   - Introduction to Git and Version Control
+   - Basic Git Commands (Clone, Commit, Push, Pull)
+   - Branching and Merging Strategies
+   - Working with GitHub/GitLab for Remote Repositories
+   - Implementing Git Workflows (Git Flow, GitHub Flow)
 
-### **4. Dependency Injection & Spring Boot**
-- **Bean Creation and Management**
-    - Understanding Spring Beans and their lifecycle
-- **Types of Dependency Injection**
-    - Constructor-based, Setter-based, and Field-based injection
-- **Scopes of Beans**
-    - Singleton, Prototype, request, session and application.
+#### **4. Continuous Integration (CI) with AWS**
+   - Introduction to CI and Its Importance
+   - Setting Up a CI Pipeline with AWS CodeBuild
+   - Integrating CodeBuild with GitHub/GitLab
+   - Building and Testing Applications with CodeBuild
+   - Automated Code Analysis and Unit Testing
 
-### **5. Spring Boot Web Development**
-- **Spring MVC Architecture**
-    - Controllers, Models, and Views
-    - Request Mapping and Handling
-- **Thymeleaf Integration**
-    - Basics of Thymeleaf templating engine
-    - Using Thymeleaf in Spring Boot
-- **RESTful Web Services**
-    - Basic of API and Rest API
-    - Building REST APIs with Spring Boot
-    - @RestController and HTTP methods
-- **Other MVC or RESTful Web Annotations**
-    - Annotations like `@RequestBody`, `@ResponseBody` , `@PathVariables`, `@RequestParam` etc,
+#### **5. Continuous Deployment (CD) with AWS**
+   - Introduction to CD and Its Importance
+   - Setting Up a CD Pipeline with AWS CodePipeline
+   - Deploying Applications on EC2, ECS, and Lambda
+   - Blue/Green Deployments and Canary Releases
+   - Rollback Strategies and Versioning
 
-- **Error Handling**
-    - Exception handling in Spring Boot
-    - Custom error pages and responses
-    - Understanding annotations like `@ExceptionHandler`, `@ResponseStatus` , `@ControllerAdvice`, `@RestControllerAdvice` etc.
+#### **6. Infrastructure as Code (IaC) with AWS CloudFormation and Terraform**
+   - Introduction to IaC and Its Benefits
+   - AWS CloudFormation Basics:
+     - Creating and Managing Stacks
+     - Writing CloudFormation Templates
+     - Parameterizing CloudFormation Templates
+   - Introduction to Terraform:
+     - Writing Terraform Configurations
+     - Managing Infrastructure with Terraform
+     - Terraform vs. CloudFormation
+     - State Management and Remote State
 
-### **6. Spring Boot Data Access**
-- **Spring Data JPA**
-    - Introduction to Spring Data JPA
-    - Creating repositories and entity classes
-    - Query methods and custom queries
-- **Database Configuration**
-    - Configuring data sources (H2, MySQL, PostgreSQL, etc.)
-    - Spring Boot Data source configuration properties
+#### **7. Configuration Management with Ansible and AWS Systems Manager**
+   - Introduction to Configuration Management
+   - Basics of Ansible:
+     - Playbooks and Roles
+     - Managing EC2 Instances with Ansible
+     - Automating Configurations with Ansible
+   - AWS Systems Manager Overview:
+     - Managing Instances with Systems Manager
+     - Using Parameter Store and Secrets Manager
+     - Automating Tasks with SSM Run Command
 
-- **Spring Data REST**
-    - Exposing JPA repositories as RESTful service
+#### **8. Containerization and Orchestration with Docker and Kubernetes**
+   - Introduction to Containers and Docker
+   - Docker Basics:
+     - Building Docker Images
+     - Docker Compose for Multi-Container Applications
+     - Managing Docker Containers
+   - Introduction to Kubernetes:
+     - Kubernetes Architecture
+     - Deploying Applications on AWS EKS (Elastic Kubernetes Service)
+     - Managing Kubernetes Clusters with kubectl
+     - Service Discovery and Load Balancing in Kubernetes
 
-### **7. Spring Boot Security**
-- **Introduction to Spring Security**
-    - Overview of security features
-    - Internal Spirng Security flow
-- **Authentication and Authorization**
-    - Diference between authentication and authorization
-    - Configuring user authentication using InMemoryUserDetailsManager and using DaoAuthenticationProvider(using database)
-    - Roles and permissions
-- **JWT (JSON Web Token) Integration**
-    - What is JWT?
-    - Generating and validating JWT tokens in spring application
+#### **9. Monitoring and Logging with AWS CloudWatch and ELK Stack**
+   - Introduction to Monitoring and Logging
+   - AWS CloudWatch Basics:
+     - Monitoring EC2 and RDS Instances
+     - Creating Alarms and Dashboards
+     - Centralized Logging with CloudWatch Logs
+   - Introduction to ELK Stack (Elasticsearch, Logstash, Kibana):
+     - Setting Up ELK Stack on AWS
+     - Log Aggregation and Analysis with ELK
+     - Visualizing Logs and Metrics in Kibana
 
-### **8. Building and Deploying Spring Boot Project**
-- **Building Spring Boot Application**
-     - Difference between .jar and .war
-     - Building a Spring Boot application using maven and gradle
-     - Running the application
+#### **10. Security Best Practices in AWS**
+   - Understanding the AWS Shared Responsibility Model
+   - Securing AWS Accounts with IAM:
+     - Managing Users, Groups, and Roles
+     - Implementing MFA (Multi-Factor Authentication)
+   - Securing Data at Rest and in Transit
+   - Using AWS WAF (Web Application Firewall) and Shield for DDoS Protection
+   - Security Auditing with AWS Config and CloudTrail
 
-- **Deploying Spring Boot Applications**
-  - Deploying spring boot application to AWS services like EC2, elastic beanstalk, etc.
-  
+#### **11. Continuous Monitoring and Incident Response**
+   - Continuous Monitoring Strategies in DevOps
+   - Implementing AWS CloudWatch for Real-Time Monitoring
+   - Automated Incident Response with AWS Lambda and SNS
+   - Introduction to AWS GuardDuty and Security Hub
+   - Managing Security Incidents on AWS
+
+#### **12. Advanced DevOps Practices on AWS**
+   - Implementing Blue/Green Deployments with AWS Elastic Beanstalk
+   - Auto-Scaling Applications on AWS
+   - Using AWS Fargate for Serverless Containers
+   - Implementing Event-Driven Architectures with AWS Lambda
+   - Chaos Engineering with AWS Fault Injection Simulator
+
+#### **13. DevOps Project: Building a CI/CD Pipeline**
+   - Defining a DevOps Project Scope
+   - Setting Up a Complete CI/CD Pipeline with AWS Services
+   - Automating Infrastructure Deployment with CloudFormation/Terraform
+   - Monitoring and Logging the Application in Production
+   - Implementing Security Best Practices and Compliance

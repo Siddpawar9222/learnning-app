@@ -1,96 +1,121 @@
-### **1. Introduction to Spring Boot**
-- **Overview of Spring Framework**
-    - What is Spring Framework ? and why use it?
-    - Core concepts: Inversion of Control (IoC) and Dependency Injection (DI)
-- **What is Spring Boot?**
-    - Features and benefits
-    - Comparison with traditional Spring applications
+### **AI/ML with Python Syllabus**
 
-### **2. Setting Up the Development Environment**
-- **Installing Java Development Kit (JDK)**
-- **Setting up IDEs** (IntelliJ IDEA, Eclipse, or VS Code)
-- **Maven and Gradle**
-    - Introduction to Maven and Gradle
-    - Creating Spring Boot projects using Spring Initializr
-- **Creating Your First Spring Boot Application**
-    - Project structure overview
-    - Running the application
+#### **1. Python Basics for AI/ML**
+   - Introduction to Python Programming
+   - Python Data Types and Structures (Lists, Tuples, Dictionaries, Sets)
+   - Control Structures (If-Else, Loops)
+   - Functions and Lambda Expressions
+   - Python Modules and Packages
+   - File Handling in Python
+   - Introduction to Python Libraries for AI/ML:
+     - NumPy
+     - Pandas
+     - Matplotlib
+     - Seaborn
 
-### **3. Spring Boot Core Concepts**
-- **Java concepts (Must Know for Spring Boot)**
-  - Arrays, Strings, methods, loops
-  - OOPs concepts, construction, setters, getters
-  - Collections framework (list, map, set), iterator
-  - Java 8 concepts like lambda, optional, stream etc.
-  - Exceptions and exception handling
-  
-- **Spring Boot Starters**
-    - Understanding starters and dependencies
-    - Commonly used starters (web, data, security, etc.)
-- **Spring Boot Architecture**
-    - Understanding the Spring Boot layer like controller, service, repository etc.
-    - How request or data is processed within the Spring Boot application ?
-- **Core Annotations**
-    - Core annotations for Spring Boot applications like `@SpringBootApplication` , `@Configuration`, `@ComponentScan` , `@Component`, `@Service`, `@Autowired` etc.
+#### **2. Data Preprocessing and Exploration**
+   - Importing and Cleaning Data with Pandas
+   - Handling Missing Data
+   - Data Transformation and Feature Scaling
+   - Exploratory Data Analysis (EDA) with Matplotlib and Seaborn
+   - Data Visualization Techniques
+   - Working with Large Datasets
 
+#### **3. Introduction to Machine Learning**
+   - Understanding Machine Learning Concepts
+   - Types of Machine Learning:
+     - Supervised Learning
+     - Unsupervised Learning
+     - Reinforcement Learning
+   - Overview of ML Workflow:
+     - Problem Definition
+     - Data Collection
+     - Data Preprocessing
+     - Model Building
+     - Model Evaluation
+     - Model Deployment
 
-### **4. Dependency Injection & Spring Boot**
-- **Bean Creation and Management**
-    - Understanding Spring Beans and their lifecycle
-- **Types of Dependency Injection**
-    - Constructor-based, Setter-based, and Field-based injection
-- **Scopes of Beans**
-    - Singleton, Prototype, request, session and application.
+#### **4. Supervised Learning Algorithms**
+   - Linear Regression
+   - Logistic Regression
+   - K-Nearest Neighbors (KNN)
+   - Decision Trees
+   - Random Forest
+   - Support Vector Machines (SVM)
+   - Naive Bayes
+   - Model Evaluation Metrics (Accuracy, Precision, Recall, F1-Score)
 
-### **5. Spring Boot Web Development**
-- **Spring MVC Architecture**
-    - Controllers, Models, and Views
-    - Request Mapping and Handling
-- **Thymeleaf Integration**
-    - Basics of Thymeleaf templating engine
-    - Using Thymeleaf in Spring Boot
-- **RESTful Web Services**
-    - Basic of API and Rest API
-    - Building REST APIs with Spring Boot
-    - @RestController and HTTP methods
-- **Other MVC or RESTful Web Annotations**
-    - Annotations like `@RequestBody`, `@ResponseBody` , `@PathVariables`, `@RequestParam` etc,
+#### **5. Unsupervised Learning Algorithms**
+   - Clustering Techniques:
+     - K-Means Clustering
+     - Hierarchical Clustering
+     - DBSCAN
+   - Dimensionality Reduction Techniques:
+     - Principal Component Analysis (PCA)
+     - t-SNE (t-Distributed Stochastic Neighbor Embedding)
+   - Anomaly Detection
 
-- **Error Handling**
-    - Exception handling in Spring Boot
-    - Custom error pages and responses
-    - Understanding annotations like `@ExceptionHandler`, `@ResponseStatus` , `@ControllerAdvice`, `@RestControllerAdvice` etc.
+#### **6. Advanced Machine Learning Concepts**
+   - Ensemble Methods (Bagging, Boosting)
+   - Gradient Boosting Machines (GBM)
+   - XGBoost, LightGBM, and CatBoost
+   - Hyperparameter Tuning and Grid Search
+   - Cross-Validation Techniques
+   - Model Selection and Regularization (Lasso, Ridge)
 
-### **6. Spring Boot Data Access**
-- **Spring Data JPA**
-    - Introduction to Spring Data JPA
-    - Creating repositories and entity classes
-    - Query methods and custom queries
-- **Database Configuration**
-    - Configuring data sources (H2, MySQL, PostgreSQL, etc.)
-    - Spring Boot Data source configuration properties
+#### **7. Deep Learning with Python**
+   - Introduction to Deep Learning
+   - Basics of Neural Networks
+   - Deep Learning Frameworks:
+     - TensorFlow
+     - Keras
+     - PyTorch
+   - Building and Training Neural Networks
+   - Convolutional Neural Networks (CNN) for Image Classification
+   - Recurrent Neural Networks (RNN) for Sequence Modeling
+   - Transfer Learning
+   - Fine-Tuning Pre-trained Models
 
-- **Spring Data REST**
-    - Exposing JPA repositories as RESTful service
+#### **8. Natural Language Processing (NLP)**
+   - Introduction to NLP
+   - Text Preprocessing Techniques (Tokenization, Stemming, Lemmatization)
+   - Bag of Words and TF-IDF
+   - Sentiment Analysis
+   - Named Entity Recognition (NER)
+   - Building NLP Models with NLTK and SpaCy
+   - Transformer Models and BERT
 
-### **7. Spring Boot Security**
-- **Introduction to Spring Security**
-    - Overview of security features
-    - Internal Spirng Security flow
-- **Authentication and Authorization**
-    - Diference between authentication and authorization
-    - Configuring user authentication using InMemoryUserDetailsManager and using DaoAuthenticationProvider(using database)
-    - Roles and permissions
-- **JWT (JSON Web Token) Integration**
-    - What is JWT?
-    - Generating and validating JWT tokens in spring application
+#### **9. Time Series Analysis**
+   - Introduction to Time Series Data
+   - Time Series Decomposition
+   - Moving Averages and Exponential Smoothing
+   - ARIMA and SARIMA Models
+   - Forecasting with Prophet
+   - Evaluating Time Series Models
 
-### **8. Building and Deploying Spring Boot Project**
-- **Building Spring Boot Application**
-     - Difference between .jar and .war
-     - Building a Spring Boot application using maven and gradle
-     - Running the application
+#### **10. AI/ML Project Development**
+   - Defining an AI/ML Project
+   - Data Collection and Preprocessing
+   - Model Selection and Training
+   - Model Evaluation and Optimization
+   - Model Deployment and Monitoring
+   - Case Studies and Real-World Applications:
+     - Predictive Analytics
+     - Image Recognition
+     - Chatbots and Virtual Assistants
+     - Recommendation Systems
 
-- **Deploying Spring Boot Applications**
-  - Deploying spring boot application to AWS services like EC2, elastic beanstalk, etc.
-  
+#### **11. Model Deployment and Scaling**
+   - Introduction to Model Deployment
+   - Deploying Models with Flask/Django
+   - Serving Models with FastAPI
+   - Introduction to Docker for Model Deployment
+   - Using AWS, Google Cloud, or Azure for Scalable Deployment
+   - Monitoring and Maintaining Deployed Models
+
+#### **12. Ethical AI and Model Interpretability**
+   - Understanding Bias and Fairness in AI
+   - Explainable AI (XAI) Techniques
+   - Model Interpretability with SHAP and LIME
+   - Ethical Considerations in AI Development
+   - Case Studies on Ethical AI

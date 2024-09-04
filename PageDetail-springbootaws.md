@@ -1,96 +1,93 @@
-### **1. Introduction to Spring Boot**
-- **Overview of Spring Framework**
-    - What is Spring Framework ? and why use it?
-    - Core concepts: Inversion of Control (IoC) and Dependency Injection (DI)
-- **What is Spring Boot?**
-    - Features and benefits
-    - Comparison with traditional Spring applications
+### **Spring Boot with AWS Syllabus**
 
-### **2. Setting Up the Development Environment**
-- **Installing Java Development Kit (JDK)**
-- **Setting up IDEs** (IntelliJ IDEA, Eclipse, or VS Code)
-- **Maven and Gradle**
-    - Introduction to Maven and Gradle
-    - Creating Spring Boot projects using Spring Initializr
-- **Creating Your First Spring Boot Application**
-    - Project structure overview
-    - Running the application
+#### **1. Introduction to AWS**
+   - Overview of Cloud Computing
+   - Introduction to AWS Services
+   - Setting up an AWS Account
+   - AWS Management Console Overview
+   - Key AWS Services for Spring Boot:
+     - EC2 (Elastic Compute Cloud)
+     - S3 (Simple Storage Service)
+     - RDS (Relational Database Service)
+     - IAM (Identity and Access Management)
+     - Lambda (Serverless Functions)
+     - CloudWatch (Monitoring and Logging)
+     - Elastic Beanstalk (Platform as a Service)
+     - SQS (Simple Queue Service)
+     - SNS (Simple Notification Service)
 
-### **3. Spring Boot Core Concepts**
-- **Java concepts (Must Know for Spring Boot)**
-  - Arrays, Strings, methods, loops
-  - OOPs concepts, construction, setters, getters
-  - Collections framework (list, map, set), iterator
-  - Java 8 concepts like lambda, optional, stream etc.
-  - Exceptions and exception handling
-  
-- **Spring Boot Starters**
-    - Understanding starters and dependencies
-    - Commonly used starters (web, data, security, etc.)
-- **Spring Boot Architecture**
-    - Understanding the Spring Boot layer like controller, service, repository etc.
-    - How request or data is processed within the Spring Boot application ?
-- **Core Annotations**
-    - Core annotations for Spring Boot applications like `@SpringBootApplication` , `@Configuration`, `@ComponentScan` , `@Component`, `@Service`, `@Autowired` etc.
+#### **2. Spring Boot on AWS EC2**
+   - Launching an EC2 Instance
+   - Configuring Security Groups and Key Pairs
+   - Connecting to EC2 Instances via SSH
+   - Installing Java and Spring Boot on EC2
+   - Deploying a Spring Boot Application on EC2
+   - Managing EC2 Instances (Start, Stop, Terminate)
 
+#### **3. Spring Boot with AWS RDS**
+   - Setting up an RDS Instance (MySQL, PostgreSQL, etc.)
+   - Configuring Spring Boot to Connect with RDS
+   - Using Spring Data JPA with AWS RDS
+   - Database Migration with Flyway or Liquibase
+   - Backup and Restore in RDS
 
-### **4. Dependency Injection & Spring Boot**
-- **Bean Creation and Management**
-    - Understanding Spring Beans and their lifecycle
-- **Types of Dependency Injection**
-    - Constructor-based, Setter-based, and Field-based injection
-- **Scopes of Beans**
-    - Singleton, Prototype, request, session and application.
+#### **4. Spring Boot with AWS S3**
+   - Introduction to AWS S3
+   - Creating and Managing S3 Buckets
+   - Integrating Spring Boot with S3:
+     - Uploading Files to S3
+     - Downloading Files from S3
+     - Managing S3 Object Permissions
+   - Using S3 for Static Content Delivery
 
-### **5. Spring Boot Web Development**
-- **Spring MVC Architecture**
-    - Controllers, Models, and Views
-    - Request Mapping and Handling
-- **Thymeleaf Integration**
-    - Basics of Thymeleaf templating engine
-    - Using Thymeleaf in Spring Boot
-- **RESTful Web Services**
-    - Basic of API and Rest API
-    - Building REST APIs with Spring Boot
-    - @RestController and HTTP methods
-- **Other MVC or RESTful Web Annotations**
-    - Annotations like `@RequestBody`, `@ResponseBody` , `@PathVariables`, `@RequestParam` etc,
+#### **5. Spring Boot with AWS IAM**
+   - Introduction to IAM Roles and Policies
+   - Setting Up IAM Roles for EC2 and S3 Access
+   - Configuring Spring Boot to Use IAM Roles
+   - Implementing Security Best Practices with IAM
 
-- **Error Handling**
-    - Exception handling in Spring Boot
-    - Custom error pages and responses
-    - Understanding annotations like `@ExceptionHandler`, `@ResponseStatus` , `@ControllerAdvice`, `@RestControllerAdvice` etc.
+#### **6. Spring Boot with AWS Elastic Beanstalk**
+   - Introduction to Elastic Beanstalk
+   - Deploying Spring Boot Applications to Elastic Beanstalk
+   - Managing Environments and Deployments
+   - Monitoring and Scaling with Elastic Beanstalk
+   - Customizing Environment Configuration
 
-### **6. Spring Boot Data Access**
-- **Spring Data JPA**
-    - Introduction to Spring Data JPA
-    - Creating repositories and entity classes
-    - Query methods and custom queries
-- **Database Configuration**
-    - Configuring data sources (H2, MySQL, PostgreSQL, etc.)
-    - Spring Boot Data source configuration properties
+#### **7. Spring Boot with AWS Lambda**
+   - Introduction to AWS Lambda
+   - Creating Serverless Functions with Spring Boot
+   - Event-Driven Architecture with Lambda and S3/SQS/SNS
+   - API Gateway Integration with Lambda
+   - Deploying and Managing Lambda Functions
 
-- **Spring Data REST**
-    - Exposing JPA repositories as RESTful service
+#### **8. Monitoring and Logging with AWS CloudWatch**
+   - Setting Up CloudWatch for EC2 and RDS Monitoring
+   - Integrating Spring Boot Logging with CloudWatch
+   - Creating Custom Metrics and Alarms
+   - Analyzing Logs and Metrics in CloudWatch
 
-### **7. Spring Boot Security**
-- **Introduction to Spring Security**
-    - Overview of security features
-    - Internal Spirng Security flow
-- **Authentication and Authorization**
-    - Diference between authentication and authorization
-    - Configuring user authentication using InMemoryUserDetailsManager and using DaoAuthenticationProvider(using database)
-    - Roles and permissions
-- **JWT (JSON Web Token) Integration**
-    - What is JWT?
-    - Generating and validating JWT tokens in spring application
+#### **9. Spring Boot with AWS SQS and SNS**
+   - Introduction to AWS SQS and SNS
+   - Implementing Messaging in Spring Boot using SQS
+   - Sending Notifications with SNS
+   - Building Event-Driven Microservices with SQS and SNS
 
-### **8. Building and Deploying Spring Boot Project**
-- **Building Spring Boot Application**
-     - Difference between .jar and .war
-     - Building a Spring Boot application using maven and gradle
-     - Running the application
+#### **10. Security and Best Practices**
+   - Securing Spring Boot Applications on AWS
+   - Implementing HTTPS with SSL Certificates
+   - Protecting Sensitive Data with AWS Secrets Manager
+   - Implementing VPC (Virtual Private Cloud) for Network Security
+   - Cost Management and Optimization on AWS
 
-- **Deploying Spring Boot Applications**
-  - Deploying spring boot application to AWS services like EC2, elastic beanstalk, etc.
-  
+#### **11. Continuous Integration/Continuous Deployment (CI/CD)**
+   - Setting Up CI/CD Pipelines with AWS CodePipeline and CodeBuild
+   - Automating Spring Boot Deployments with CodeDeploy
+   - Integrating GitHub/Bitbucket with AWS CodePipeline
+   - Monitoring and Rollback Strategies
+
+#### **12. Deploying a Full-Stack Application**
+   - Building a Full-Stack Application with Spring Boot and React.js/Angular
+   - Deploying the Backend (Spring Boot) on AWS
+   - Hosting the Frontend on S3 and CloudFront
+   - Configuring Route 53 for Domain Management
+   - Implementing CI/CD for the Full-Stack Application
