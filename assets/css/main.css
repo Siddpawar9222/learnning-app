@@ -940,6 +940,21 @@ section,
   font-size: 2rem;
   font-weight: 700;
 }
+.about-content {
+  display: none; /* Initially hide the content */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.content:hover .about-content {
+  display: block; /* Show the content on hover */
+  opacity: 1;
+}
+
+.content {
+  cursor: pointer; /* Add pointer cursor to indicate it's interactive */
+}
+
 
 .about .content ul {
   list-style: none;
